@@ -1027,16 +1027,6 @@
             "rid": "win"
           }
         }
-      },
-      "ViewModels/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/ViewModels.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ViewModels.dll": {}
-        }
       }
     }
   },
@@ -3172,17 +3162,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "ViewModels/1.0.0": {
-      "type": "project",
-      "path": "../ViewModels/ViewModels.csproj",
-      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
-      "ViewModels >= 1.0.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9"
     ]
   },
   "packageFolders": {
@@ -3219,11 +3203,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "D:\\AKchat\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "D:\\AKchat\\ViewModels\\ViewModels.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

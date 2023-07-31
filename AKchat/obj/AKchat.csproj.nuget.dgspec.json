@@ -123,11 +123,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "D:\\AKchat\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "D:\\AKchat\\ViewModels\\ViewModels.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
