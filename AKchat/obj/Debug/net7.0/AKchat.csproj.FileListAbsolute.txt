@@ -1,0 +1,6 @@
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.csproj.AssemblyReference.cache
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.GeneratedMSBuildEditorConfig.editorconfig
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.AssemblyInfoInputs.cache
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.AssemblyInfo.cs
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.csproj.CoreCompileInputs.cache
+D:\AKchat\AKchat\obj\Debug\net7.0\AKchat.MvcApplicationPartsAssemblyInfo.cache

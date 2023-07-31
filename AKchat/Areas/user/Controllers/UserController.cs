@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using dataRepository.Interface;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AKchat.Areas.user.Controllers
 {
@@ -9,7 +10,6 @@ namespace AKchat.Areas.user.Controllers
 
         private readonly IUserRepository _userrepo;
         private readonly IConfiguration _configuration;
-        //public string connectionstring = "Server=server=192.168.2.59\\SQL2019;Database=RestaurantPOS;User Id=sa;Password=Tatva@123;Encrypt=False";
         public UserController(IUserRepository userrepo, IConfiguration configuration)
         {
             _userrepo = userrepo;
@@ -17,6 +17,21 @@ namespace AKchat.Areas.user.Controllers
 
         }
 
+        [HttpPost]
+        public IActionResult Register(CompanyRegisterVm model)//company register
+        {
+            var i = _userrepo.registerrepo(model);
+            if (i > 0)
+            {
+                return Ok();
+            }
+            else
+            {
+                return Content("false");
+            }
+
+
+        }
         public IActionResult Index()
         {
             return View();
