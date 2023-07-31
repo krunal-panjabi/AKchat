@@ -3945,16 +3945,6 @@
           "bin/placeholder/dataRepository.dll": {}
         }
       },
-      "Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Models.dll": {}
-        }
-      },
       "ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -11548,11 +11538,6 @@
       "path": "../dataRepository/dataRepository.csproj",
       "msbuildProject": "../dataRepository/dataRepository.csproj"
     },
-    "Models/1.0.0": {
-      "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
-    },
     "ViewModels/1.0.0": {
       "type": "project",
       "path": "../ViewModels/ViewModels.csproj",
@@ -11564,7 +11549,6 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.8",
-      "Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "ViewModels >= 1.0.0",
       "dataRepository >= 1.0.0"
@@ -11608,9 +11592,6 @@
           "projectReferences": {
             "D:\\AKchat\\dataRepository\\dataRepository.csproj": {
               "projectPath": "D:\\AKchat\\dataRepository\\dataRepository.csproj"
-            },
-            "D:\\AKchat\\Models\\Models.csproj": {
-              "projectPath": "D:\\AKchat\\Models\\Models.csproj"
             },
             "D:\\AKchat\\ViewModels\\ViewModels.csproj": {
               "projectPath": "D:\\AKchat\\ViewModels\\ViewModels.csproj"
