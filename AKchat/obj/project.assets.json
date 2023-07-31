@@ -11555,7 +11555,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pca29\\.nuget\\packages\\": {},
+    "C:\\Users\\pca59\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -11565,7 +11565,7 @@
       "projectUniqueName": "D:\\AKchat\\AKchat\\AKchat.csproj",
       "projectName": "AKchat",
       "projectPath": "D:\\AKchat\\AKchat\\AKchat.csproj",
-      "packagesPath": "C:\\Users\\pca29\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\pca59\\.nuget\\packages\\",
       "outputPath": "D:\\AKchat\\AKchat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -11573,7 +11573,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pca29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pca59\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11583,7 +11583,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11645,7 +11644,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
