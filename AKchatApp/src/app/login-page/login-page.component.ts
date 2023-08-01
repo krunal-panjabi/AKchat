@@ -13,12 +13,13 @@ export class LoginPageComponent implements OnInit {
   constructor(private formBuilder : FormBuilder ,private service : UsersService) { }
 
   ngOnInit(): void {
+    this.userForm.reset();
     this.initializeForm();
   }
   initializeForm(){
     this.userForm = this.formBuilder.group({
-      name : ['' ,[Validators.required,Validators.minLength(3),Validators.maxLength(15)]],
-      password : ['' ,[Validators.required]],
+      username : [null ,[Validators.required,Validators.minLength(3),Validators.maxLength(15)]],
+      password : [null ,[Validators.required]],
     })
   }
 
@@ -29,6 +30,7 @@ export class LoginPageComponent implements OnInit {
       this.service.postData(this.userForm.value).subscribe(data =>{
         alert("added");
         console.log(data);
+        this.userForm.reset();
       })
     }
   }

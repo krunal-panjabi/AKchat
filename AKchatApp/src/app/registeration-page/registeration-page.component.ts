@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UsersService } from '../users.service';
+
 
 @Component({
   selector: 'app-registeration-page',
@@ -9,14 +11,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class RegisterationPageComponent implements OnInit {
   userForm : FormGroup = new FormGroup({});
   submitted = false;
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder,private service : UsersService) { }
 
   ngOnInit(): void {
     this.initializeForm();
   }
   initializeForm(){
     this.userForm = this.formBuilder.group({
-      name : ['' ,[Validators.required,Validators.minLength(3),Validators.maxLength(15)]],
+      username : ['' ,[Validators.required,Validators.minLength(3),Validators.maxLength(15)]],
       password : ['' ,[Validators.required]],
     })
   }
@@ -25,7 +27,11 @@ export class RegisterationPageComponent implements OnInit {
     this.submitted = true ;
 
     if(this.userForm.valid){
-      console.log(this.userForm.value)
+      this.service.postData(this.userForm.value).subscribe(data =>{
+        alert("added");
+        console.log(data);
+        this.userForm.reset();
+      })
     }
   }
 

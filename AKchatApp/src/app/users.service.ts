@@ -8,12 +8,10 @@ import { environment } from 'src/environments/environment';
   // providedIn: 'root'
 )
 export class UsersService {
-  readonly url = "http://localhost:5232/"
+  readonly url = "https://localhost:7239/"
   constructor(private http:HttpClient) { }
 
-  public postData(User: any): Observable<any> {
-    return this.http.post(this.url,User);
-    // (`${environment.apiUrl}Admin/UserLogin`,  data );
-
+  public postData(User: user): Observable<any> {
+    return this.http.post(`${environment.apiUrl}User/Register`, User );
   }
 }
