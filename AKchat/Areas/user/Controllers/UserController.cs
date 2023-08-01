@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AKchat.Areas.user.Controllers
 {
     [ApiController]
+    [Route("api/[controller]")]
 
     public class UserController : Controller
     {
@@ -17,24 +18,33 @@ namespace AKchat.Areas.user.Controllers
 
         }
 
-        [HttpPost]
-        public IActionResult Register(CompanyRegisterVm model)//company register
-        {
-            var i = _userrepo.registerrepo(model);
-            if (i > 0)
+        /*  [HttpPost]*/
+        /*    public IActionResult Register(CompanyRegisterVm model)//company register
             {
-                return Ok();
+                var i = _userrepo.registerrepo(model);
+                if (i > 0)
+                {
+                    return Ok();
+                }
+                else
+                {
+                    return Content("false");
+                }
+
+
+            }*/
+        [HttpPost("CheckForName")]
+        public IActionResult CheckForName([FromBody] string name)
+        {
+            var i = _userrepo.checkforname(name);
+            if(i==0)
+            {
+                return Ok(false);
             }
             else
             {
-                return Content("false");
+                return Ok(true);
             }
-
-
-        }
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }

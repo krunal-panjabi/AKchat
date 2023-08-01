@@ -14,15 +14,30 @@ namespace dataRepository.Repository
         public string connections = "server=192.168.2.59\\SQL2019;Database=AKchat;User Id=sa;Password=Tatva@123;Encrypt=False";
 
 
-        public int registerrepo(UserVM model)
+        /* public int registerrepo(UserVM model)
+         {
+             using (SqlConnection con = new SqlConnection(connections))
+             {
+                 SqlCommand cmd = new SqlCommand("spInsertComapny", con);
+                 cmd.CommandType = CommandType.StoredProcedure;
+                 cmd.Parameters.AddWithValue("@name", model.companyName);
+                 cmd.Parameters.AddWithValue("@companyCode", model.companyCode);
+                 cmd.Parameters.AddWithValue("@password", model.password);
+                 con.Open();
+
+                 int i = cmd.ExecuteNonQuery();
+
+                 return i;
+             }
+         }*/
+       
+       public int checkforname(string name)
         {
             using (SqlConnection con = new SqlConnection(connections))
             {
-                SqlCommand cmd = new SqlCommand("spInsertComapny", con);
+                SqlCommand cmd = new SqlCommand("spCheckUsername", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@name", model.companyName);
-                cmd.Parameters.AddWithValue("@companyCode", model.companyCode);
-                cmd.Parameters.AddWithValue("@password", model.password);
+                cmd.Parameters.AddWithValue("@name", name);
                 con.Open();
 
                 int i = cmd.ExecuteNonQuery();

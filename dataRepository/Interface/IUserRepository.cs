@@ -8,7 +8,8 @@ namespace dataRepository.Interface
 {
     public class IUserRepository
     {
-        public int registerrepo(UserVM model);
+        /*  public int registerrepo(UserVM model);*/
+        public int checkforname(string name);
 
     }
 }

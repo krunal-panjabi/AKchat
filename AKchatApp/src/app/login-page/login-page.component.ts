@@ -27,6 +27,7 @@ export class LoginPageComponent implements OnInit {
     if(this.userForm.valid){
       console.log(this.userForm.value)
     }
+  
   }
 
 }
