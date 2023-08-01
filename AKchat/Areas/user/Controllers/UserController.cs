@@ -18,6 +18,14 @@ namespace AKchat.Areas.user.Controllers
 
         }
 
+
+
+
+
+
+
+
+
         /*  [HttpPost]*/
         /*    public IActionResult Register(CompanyRegisterVm model)//company register
             {
