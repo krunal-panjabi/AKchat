@@ -3373,7 +3373,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pca29\\.nuget\\packages\\": {},
+    "C:\\Users\\pca59\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -3383,7 +3383,7 @@
       "projectUniqueName": "D:\\AKchat\\dataRepository\\dataRepository.csproj",
       "projectName": "dataRepository",
       "projectPath": "D:\\AKchat\\dataRepository\\dataRepository.csproj",
-      "packagesPath": "C:\\Users\\pca29\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\pca59\\.nuget\\packages\\",
       "outputPath": "D:\\AKchat\\dataRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -3391,7 +3391,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pca29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pca59\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3448,7 +3448,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
