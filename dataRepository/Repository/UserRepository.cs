@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ViewModels.Models;
 
 namespace dataRepository.Repository
 {
@@ -18,10 +19,9 @@ namespace dataRepository.Repository
         {
             using (SqlConnection con = new SqlConnection(connections))
             {
-                SqlCommand cmd = new SqlCommand("spInsertComapny", con);
+                SqlCommand cmd = new SqlCommand("spInsertUser", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@name", model.companyName);
-                cmd.Parameters.AddWithValue("@companyCode", model.companyCode);
+                cmd.Parameters.AddWithValue("@name", model.username);
                 cmd.Parameters.AddWithValue("@password", model.password);
                 con.Open();
 
