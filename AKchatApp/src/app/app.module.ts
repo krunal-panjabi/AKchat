@@ -7,6 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterationPageComponent } from './registeration-page/registeration-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersService } from './users.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { RegisterationPageComponent } from './registeration-page/registeration-p
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+   providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

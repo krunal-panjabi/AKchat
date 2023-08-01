@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-login-page',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginPageComponent implements OnInit {
   userForm : FormGroup = new FormGroup({});
   submitted = false;
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder ,private service : UsersService) { }
 
   ngOnInit(): void {
     this.initializeForm();
@@ -25,7 +26,10 @@ export class LoginPageComponent implements OnInit {
     this.submitted = true ;
 
     if(this.userForm.valid){
-      console.log(this.userForm.value)
+      this.service.postData(this.userForm.value).subscribe(data =>{
+        alert("added");
+        console.log(data);
+      })
     }
   }
 
